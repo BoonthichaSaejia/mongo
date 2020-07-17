@@ -1,0 +1,35 @@
+2020-07-17T14:36:21.015985+00:00 app[web.1]:     response = self.full_dispatch_request()
+2020-07-17T14:36:21.015985+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 1953, in full_dispatch_request
+2020-07-17T14:36:21.015986+00:00 app[web.1]:     return self.finalize_request(rv)
+2020-07-17T14:36:21.015986+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 1968, in finalize_request
+2020-07-17T14:36:21.015986+00:00 app[web.1]:     response = self.make_response(rv)
+2020-07-17T14:36:21.015987+00:00 app[web.1]:   File "/app/.heroku/python/lib/python3.6/site-packages/flask/app.py", line 2131, in make_response
+2020-07-17T14:36:21.015987+00:00 app[web.1]:     " {rv.__class__.__name__}.".format(rv=rv)
+2020-07-17T14:36:21.016111+00:00 app[web.1]: TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Cursor.
+2020-07-17T14:36:21.021199+00:00 heroku[router]: at=info method=GET path="/news" host=botnoi-final-project.herokuapp.com request_id=0dd0d481-bfd0-4f4e-bd54-4def160adfd7 fwd="1.4.175.142" dyno=web.1 connect=1ms service=53ms status=500 bytes=470 protocol=http
+2020-07-17T14:36:21.021251+00:00 app[web.1]: 10.9.163.168 - - [17/Jul/2020:14:36:21 +0000] "GET /news HTTP/1.1" 500 290 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+2020-07-17T14:56:37.000000+00:00 app[api]: Build started by user boonthicha.s@gmail.com
+2020-07-17T14:57:02.993672+00:00 app[api]: Deploy 45914c5c by user boonthicha.s@gmail.com
+2020-07-17T14:57:02.993672+00:00 app[api]: Release v8 created by user boonthicha.s@gmail.com
+2020-07-17T14:57:04.426620+00:00 heroku[web.1]: Restarting
+2020-07-17T14:57:04.443622+00:00 heroku[web.1]: State changed from up to starting
+2020-07-17T14:57:05.355827+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-07-17T14:57:05.380144+00:00 app[web.1]: [2020-07-17 14:57:05 +0000] [11] [INFO] Worker exiting (pid: 11)
+2020-07-17T14:57:05.380159+00:00 app[web.1]: [2020-07-17 14:57:05 +0000] [4] [INFO] Handling signal: term
+2020-07-17T14:57:05.380362+00:00 app[web.1]: [2020-07-17 14:57:05 +0000] [10] [INFO] Worker exiting (pid: 10)
+2020-07-17T14:57:05.881437+00:00 app[web.1]: [2020-07-17 14:57:05 +0000] [4] [INFO] Shutting down: Master
+2020-07-17T14:57:05.944446+00:00 heroku[web.1]: Process exited with status 0
+2020-07-17T14:57:07.356806+00:00 heroku[web.1]: Starting process with command `gunicorn application:app`
+2020-07-17T14:57:09.338036+00:00 app[web.1]: [2020-07-17 14:57:09 +0000] [4] [INFO] Starting gunicorn 20.0.4
+2020-07-17T14:57:09.338594+00:00 app[web.1]: [2020-07-17 14:57:09 +0000] [4] [INFO] Listening at: http://0.0.0.0:51705 (4)
+2020-07-17T14:57:09.338705+00:00 app[web.1]: [2020-07-17 14:57:09 +0000] [4] [INFO] Using worker: sync
+2020-07-17T14:57:09.343363+00:00 app[web.1]: [2020-07-17 14:57:09 +0000] [10] [INFO] Booting worker with pid: 10
+2020-07-17T14:57:09.439371+00:00 app[web.1]: [2020-07-17 14:57:09 +0000] [11] [INFO] Booting worker with pid: 11
+2020-07-17T14:57:10.006258+00:00 heroku[web.1]: State changed from starting to up
+2020-07-17T14:57:11.000000+00:00 app[api]: Build succeeded
+2020-07-17T15:00:49.161233+00:00 app[api]: Starting process with command `python .py` by user scheduler@addons.heroku.com
+2020-07-17T15:00:52.446045+00:00 heroku[scheduler.3462]: Starting process with command `python .py`
+2020-07-17T15:00:53.028134+00:00 heroku[scheduler.3462]: State changed from starting to up
+2020-07-17T15:00:54.571266+00:00 heroku[scheduler.3462]: Process exited with status 2
+2020-07-17T15:00:54.604578+00:00 heroku[scheduler.3462]: State changed from up to complete
+2020-07-17T15:00:54.517385+00:00 app[scheduler.3462]: python: can't open file '.py': [Errno 2] No such file or directory
